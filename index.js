@@ -21,3 +21,9 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
+
+let sortedRobots;
+
+sortedRobots = robots.map(robot => {
+  if (knownDecepticons.exists(robot.name))
+})
