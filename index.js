@@ -26,9 +26,9 @@ let sortedRobots;
 
 sortedRobots = robots.map(robot => {
   if (knownDecepticons.includes(robot.name)) {
-    return {...robot, alliance: 'decepticon'}
+    return Object.assign({}, robot, {alliance: 'decepticon'})
   } else {
-    return {...robot, alliance: 'autobot'}
+    return Object.assign({}, robot, {alliance: 'autobot'})
   }
 })
 
