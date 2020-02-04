@@ -32,3 +32,12 @@ sortedRobots = robots.map(robot => {
   }
 })
 
+let coloredZebraStripes;
+
+coloredZebraStripes = zebraStripes.map((zebra, index) => {
+  if (index % 2 === 0) {
+    return Object.assign({}, zebra, {color: 'black'})
+  } else {
+    return Object.assign({}, zebra, {color: 'white'})
+  }
+})
